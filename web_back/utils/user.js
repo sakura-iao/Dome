@@ -27,7 +27,7 @@ var user = {
         )
     },
     getuser: function (callback) {
-        $.get(baseUrl + '/admin/getUser', function () {
+        $.get(baseUrl + '/admin/getUser', function (res) {
             callback(res);
         })
     }
