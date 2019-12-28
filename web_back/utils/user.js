@@ -25,5 +25,10 @@ var user = {
             },
             'json'
         )
+    },
+    getuser: function (callback) {
+        $.get(baseUrl + '/admin/getUser', function () {
+            callback(res);
+        })
     }
 }
